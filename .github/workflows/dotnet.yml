@@ -18,9 +18,9 @@ jobs:
       with:
         dotnet-version: 3.1.301
     - name: Build
-      run: dotnet build src\FancyShare.csproj -c Release
+      run: dotnet build -c Release
     - name: Publish
-      run: dotnet publish src\FancyShare.csproj -c Release -r win-x64 -p:PublishSingleFile=true --self-contained false -o src/bin/Publish 
+      run: dotnet publish -c Release -r win-x64 -p:PublishSingleFile=true --self-contained false -o src/bin/Publish 
     - name: Release
       uses: actions/upload-artifact@v2
       with:
