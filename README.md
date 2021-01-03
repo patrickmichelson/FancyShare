@@ -3,6 +3,16 @@
 A tool to share parts of a screen in online meeting apps.
 
 FancyShare enables sharing of a section of a screen by creating a transparent overlay window on top of all other applications. This window can then be selected as the application to share by apps supporting single window sharing.
+
+## Supported Apps
+
+| Application        | Support                      |
+|--------------------|------------------------------|
+| Skype for Business | :white_check_mark: supported |
+| Microsoft Teams    | :x: not supported            |
+| Slack              | :x: not supported            |
+| Zoom               | built-in feature             |
+
 ## Getting Started
 
 ### Requirements
@@ -22,14 +32,12 @@ Checkout the repository, navigate to the root folder, and run the command:
 dotnet build
 ```
 
-
 ## Known Issues
 
 When using [Microsoft PowerToys FancyZone](https://aka.ms/PowerToysOverview_FancyZones): 
 
 Dragging the FancyShare frame window to a zone with the mouse does not work, if the PowerToys option "Make dragged window transparent" is enabled.
 Please disable this option or use keyboard shortcuts to move the window to a zone.
-
 
 ## License
 
