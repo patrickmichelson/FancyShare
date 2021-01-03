@@ -2,14 +2,11 @@
 
 A tool to share parts of a screen in online meeting apps.
 
-It requires [Microsoft PowerToys FancyZone](https://aka.ms/PowerToysOverview_FancyZones) to configure layouts which split the screen into multiple zones.
-
-FancyShare enables sharing of a single zone by creating a transparent overlay window on top of a zone. This window can be selected as the application to share by apps supporting single window sharing.
-
+FancyShare enables sharing of a section of a screen by creating a transparent overlay window on top of all other applications. This window can then be selected as the application to share by apps supporting single window sharing.
 ## Getting Started
 
 ### Requirements
-The project has the same requirements as [PowerToys v0.27](https://github.com/microsoft/PowerToys/tree/v0.27.0#requirements)
+[.NET Core 3.1 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-desktop-3.1.4-windows-x64-installer)
 
 ### Download
 
@@ -17,13 +14,22 @@ See [release page](https://github.com/patrickmichelson/FancyShare/releases).
 
 ### Build
 
-To build the project from source, in addition to the requirements listed above, you need to install [.NET SDK ](https://dotnet.microsoft.com/download) (3.1 or higher).
+To build the project from source, the [.NET SDK 3.1 or higher](https://dotnet.microsoft.com/download) is needed.
 
-Checkout the repository, navigate to the root folder, and  run the command:
+Checkout the repository, navigate to the root folder, and run the command:
 
 ```
 dotnet build
 ```
+
+
+## Known Issues
+
+When using [Microsoft PowerToys FancyZone](https://aka.ms/PowerToysOverview_FancyZones): 
+
+Dragging the FancyShare frame window to a zone with the mouse does not work, if the PowerToys option "Make dragged window transparent" is enabled.
+Please disable this option or use keyboard shortcuts to move the window to a zone.
+
 
 ## License
 

@@ -1,7 +1,8 @@
 ﻿<Application x:Class="FancyShare.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             ShutdownMode="OnExplicitShutdown">
+             ShutdownMode="OnExplicitShutdown"
+             StartupUri="/UI/MainWindow.xaml">
     <Application.Resources>
          
     </Application.Resources>
